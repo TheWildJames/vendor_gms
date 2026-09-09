@@ -29,5 +29,9 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Dialer
 LOCAL_OPTIONAL_USES_LIBRARIES := wear-sdk org.apache.http.legacy androidx.window.extensions androidx.window.sidecar
 LOCAL_USES_LIBRARIES := com.google.android.dialer.support
+# dialer.support is a make-built prebuilt with no dexpreopt config output, so
+# the uses-library verification has no input to check; skip it (the GMS
+# prebuilt set is self-consistent).
+LOCAL_ENFORCE_USES_LIBRARIES := false
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)

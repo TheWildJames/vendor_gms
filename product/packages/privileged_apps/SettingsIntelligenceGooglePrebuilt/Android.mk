@@ -22,7 +22,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := SettingsIntelligenceGooglePrebuilt
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := SettingsIntelligenceGooglePrebuilt.apk
-LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_UPDATABLE := false
+LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
 LOCAL_PRIVILEGED_MODULE := true

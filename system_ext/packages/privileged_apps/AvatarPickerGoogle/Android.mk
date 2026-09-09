@@ -28,5 +28,4 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_USES_LIBRARIES := android.test.base
 LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_OVERRIDES_PACKAGES := AvatarPicker
 include $(BUILD_PREBUILT)
